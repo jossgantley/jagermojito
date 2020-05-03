@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jager Mojito Recipe</title>
+   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>How to make a <span id="jager">Jager</span> Mojito</h1>
+				<figure>
+                    <img src="mojito.jpg" alt="A refreshing Jager mojito">
+	
+				    <figcaption>If you're a fan of Jagermeister, you are going to <em>love</em> this twist on the classic mojito!</figcaption>
+                </figure>
+			</header>
+			
+			<section onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+				
+				<h2>ingredients <i id="ingredients" class="fa fa-check-circle" aria-hidden="true"></i></h2>
+				<ul>
+					<li>3 fresh mint</li>
+					<li>1 oz simple syrup</li>
+					<li>small lime juice</li>
+					<li>1.5 oz Jagermeister herbal liqueur</li>
+					<li>Sprite</li>
+				</ul>
+			</section>
+			
+			<section onmouseover="preparationHover()" onmouseout="preparationNormal()">
+			
+				<h2>preparation <i id="preparation" class="fa fa-list-ol" aria-hidden="true"></i></h2>
+				<ol>
+					<li>
+	                Firstly, start by muddling the mint in the simple sryup.
+					</li>
+					<li>
+						Then add some lime juice.
+					</li>
+					<li>
+						Add an ounce of Jagermeister, or if you want to be <em>adventurous</em> you could make it double!
+					</li>
+					<li>
+						Finally, you can top it off with Sprite/7up or a soda of your choice.
+					</li>
+					<li>
+						Enjoy responsibly!
+					</li>
+				</ol>
+			</section>
+			
+			<footer>
+				<p>Copyright Me 2020</p>
+			</footer>
+		</div>
+		<script>
+		function preparationHover(){
+		  document.getElementById("preparation").style.fontSize = "200%";
+		}
+		function preparationNormal(){
+		  document.getElementById("preparation").style.fontSize = "100%";
+		}
+		function ingredientsHover(){
+		  document.getElementById("ingredients").style.fontSize = "200%";
+		}
+		function ingredientsNormal(){
+		  document.getElementById("ingredients").style.fontSize = "100%";
+		}
+    		
+        </script>
+	</body>
+</html>
